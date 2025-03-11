@@ -260,11 +260,14 @@ body {
     max-width: 1200px;
 }
 .typo {
+    text-align: justify;
+    font-family: "Exo", sans-serif;
     flex: 1;
     font-size: 1.5rem;
     font-weight: 700;
     color: #222;
     transition: transform 0.3s ease;
+    padding: 10px;
 }
 .typo:hover {
     transform: scale(1.05);
