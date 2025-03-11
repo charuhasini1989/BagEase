@@ -473,3 +473,85 @@ footer {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* Logo Styling */
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.logo i {
+    padding: 5px;
+    font-size: 50px;
+    color: #d83627;
+}
+
+/* Footer Styling */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 10%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #ff6600;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ff6600;
+}
+
+/* Button and Link Hover Effects */
+.cta-button:hover,
+.nav-links a:hover {
+    transform: scale(1.05);
+}
+h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-family: "Exo", sans-serif;
+    flex: 1;
+    font-size: 2rem;
+    color: #222;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
