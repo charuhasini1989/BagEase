@@ -555,3 +555,25 @@ h2 {
     transition: transform 0.3s ease;
     padding: 10px;
 }
+.cta-button {
+    display: inline-block;
+    font-size: 24px;  /* Increased font size */
+    padding: 12px 26px;  /* More padding for a larger button */
+    background-color: #d83627;  /* Eye-catching red color */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;  /* Rounded corners */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button i {
+    font-size: 24px; /* Bigger train icon */
+    margin-right: 8px; /* Spacing between icon and text */
+}
+
+.cta-button:hover {
+    background-color: #b02a1f;  /* Darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
