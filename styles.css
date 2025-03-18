@@ -56,15 +56,28 @@ body {
 
 .nav-links a {
     background-color: #f8d1b8;
-    padding: 5px;
+    padding: 8px 15px; /* Increased padding for better spacing */
     border-radius: 5px;
     text-decoration: none;
     color: black;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 0.5px;
     transition: color 0.3s ease;
+
+    /* Flexbox for horizontal alignment */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds space between icon and text */
 }
+
+/* Ensures icons are properly sized */
+.nav-links i {
+    font-size: 22px; /* Adjust icon size */
+    display: inline-flex; /* Prevents unwanted spacing issues */
+    align-items: center;
+}
+
 
 .nav-links a:hover {
     color: #ff6600;
@@ -577,3 +590,115 @@ h2 {
     background-color: #b02a1f;  /* Darker red on hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
+
+#dropdown
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button (Services tab) */
+.dropbtn {
+    background-color: #f8d1b8;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    
+    /* Ensures the dropdown is right below "Services" */
+    top: 100%; /* Aligns right below */
+    left: 0; /* Aligns with the tab */
+    padding: 5px 0;
+    border-top: 3px solid #d83627; /* Adds a small top border for a polished look */
+}
+
+/* Dropdown Links */
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button (Services tab) */
+.dropbtn {
+    background-color: #f8d1b8;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    
+    /* Ensures the dropdown is right below "Services" */
+    top: 100%; /* Aligns right below */
+    left: 0; /* Aligns with the tab */
+    padding: 5px 0;
+    border-top: 3px solid #d83627; /* Adds a small top border for a polished look */
+}
+
+/* Dropdown Links */
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effects */
+.dropdown-content a:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown Arrow */
+.dropbtn i.fa-chevron-down {
+    font-size: 16px;
+}
+
+
